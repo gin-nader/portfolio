@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Tom Ginader - Graduate Student</title>
+	<link href='https://fonts.googleapis.com/css?family=Droid+Sans' rel='stylesheet' type='text/css'>
+	<link href='https://fonts.googleapis.com/css?family=Lobster' rel='stylesheet' type='text/css'>
+</head>
+<body>
+	<header id="main_navigation" class="clearfix">
+		<%= link_to "Tom Ginader", {controller: "home", action: "index"}, class: "name" %>
+		<nav>
+			<%= link_to "Status Updates", {controller: "updates", action: "index"}, 
+				class: "nav_bar" %>
+			<%= link_to "My Projects", {controller: "projects", action: "index"}, 
+				class: "nav_bar" %>
+			<%= link_to "Contact Me", {controller: "contact", action: "index"}, 
+				class: "nav_bar" %>
+		</nav>
+	</header>
+
+
+	<div id="updates_wrapper" class="skinny_wrapper">
+		<h1 id="page_title">Status Updates</h1>
+		<hr>
+		<div class="update">
+			<p>
+				Trying to decide between Rails vs. Django. Really enjoying
+				Rails so far.
+			</p>
+			<p class="date">July 22, 2016</p>
+		</div>
+
+		<div class="pagination">
+			<span class="previous_page disabled">
+			Previous</span>
+			<em class="current">1</em>
+			<a rel="next" href="#">2</a>
+			<a class="next_page" href="#">Next</a>
+		</div>
+	</div>
+
+	<footer id="main_footer">
+		<hr>
+		<p class="copyright">&copy;2016 Tom Ginader</p>
+		<nav>
+			<a href="#"><i class="fa fa-github" aria-hidden="true"></i></a>
+		</nav>		
+	</footer>
+</body>
+</html>

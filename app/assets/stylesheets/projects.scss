@@ -1,0 +1,75 @@
+#projects_wrapper {
+	hr {
+		width: 8em;
+		display: block;
+		height: 2px;
+		border: 0;
+		background-color: $border;
+		border-top: 2px soild $border;
+	}
+	.project {
+		h2 {
+		margin-bottom: 0;
+		text-align: left;
+		font-size: 2em;
+		color: $dark;
+		font-weight: 400;
+		}
+		a {
+			color: $dark;
+			text-decoration: none;
+			&:hover {
+				color: $border;
+			}
+			font-weight: 400;
+		}
+	}
+}
+
+// ------------Pagination
+
+.pagination:before,
+.pagination:after {
+	content: " ";
+	display: table;
+}
+
+.pagination:after {
+	clear: both;
+}
+
+.pagination {
+	text-align: center;
+	margin: 3em 0 0 0;
+	padding-bottom: 1em;
+	a, .previous_page, .current, .next_page {
+		padding: .75em .75em;
+		margin: 0 .5em;
+		border-radius: 3px;
+		line-height: 20px;
+		text-decoration: none;
+		background: white;
+		font-weight: 400;
+		font-size: .9em;
+		font-style: normal;
+		color: $dark;
+		&:hover {
+			background: $border;
+			color: white;
+		}
+	}
+	.current {
+		background: $border;
+		color: white;
+		&:hover {
+			color: white;
+		}
+	}
+	.disabled {
+		color: #8A8A8A;
+		&:hover {
+			color: #8A8A8A;
+			background: white;
+		}
+	}
+}
