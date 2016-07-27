@@ -19,32 +19,22 @@
 	</header>
 
 
-	<div id="updates_wrapper" class="skinny_wrapper">
-		<h1 id="page_title">Status Updates</h1>
-		<hr>
-		<div class="update">
-			<p>
-				Trying to decide between Rails vs. Django. Really enjoying
-				Rails so far.
-			</p>
-			<p class="date">July 22, 2016</p>
-		</div>
-		<div class="update">
-			<p>
-				<%= @update.content %>
-			</p>
-			<p class="date">July 22, 2016</p>
-		</div>
-		<div class="pagination">
-			<span class="previous_page disabled">
-			Previous</span>
-			<em class="current">1</em>
-			<a rel="next" href="#">2</a>
-			<a class="next_page" href="#">Next</a>
-		</div>
-	</div>
 
-	<footer id="main_footer">
+<br>
+<br>
+
+<div id="updates_wrapper" class="skinny_wrapper">
+	<%= @update.content %>
+	<br>
+	<br>
+	<%= button_to "Edit", edit_update_path(@update) %>
+	<%= button_to 'Destroy',  update_path(@update),  method: :delete, data: { confirm: 'Are you sure?' } %>
+</div>
+
+
+
+
+<footer id="main_footer">
 		<hr>
 		<p class="copyright">&copy;2016 Tom Ginader</p>
 		<nav>

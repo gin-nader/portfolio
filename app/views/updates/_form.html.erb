@@ -1,0 +1,28 @@
+<%= form_for @update do |f| %>
+	<% if @update.errors.any? %>
+		<h2><%= pluralize(@update.errors.count, "errors") %>prevented
+		this update from saving.</h2>
+		<ul>
+			<% @update.errors.full_messages.each do |msg| %>
+				<li><%= msg %></li>
+			<% end %>
+		</ul>
+	<% end %>
+	
+	<br>
+	<br>
+	<div id="updates_wrapper" class="skinny_wrapper">
+		<br>
+		<br>
+		<h5><%= f.label :content, "Status Update:" %><h5>
+		<br>
+		<%= f.text_area :content %>
+
+		<br>
+		<br>
+
+		<%= f.submit %>
+	</div>
+
+
+<% end %>
