@@ -9,7 +9,7 @@
 		<div>
 			<% @update.each do |update| %>
 				<div class="update">
-					<p><%= update.content %></p>
+					<p><%= markdown update.content %></p>
 					<p class="date"><%= update.created_at.strftime("%B %d, %Y") %></p>
 				</div>
 			<%end %>

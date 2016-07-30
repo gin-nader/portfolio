@@ -18,6 +18,8 @@ gem 'coffee-rails', '~> 4.2'
 gem 'normalize-rails'
 gem 'font-awesome-sass'
 gem 'will_paginate', '~> 3.1.0'
+gem 'pygments.rb', '~> 0.6.0'
+gem 'redcarpet', '~> 3.2.2'
 
 # Use jquery as the JavaScript library
 gem 'jquery-rails'

@@ -7,10 +7,10 @@
 <br>
 
 <div id="updates_wrapper" class="skinny_wrapper">
-	<%= @update.content %>
+	<%= markdown @update.content %>
 	<br>
 	<br>
-	<%= button_to "Edit", edit_update_path(@update) %>
+	<%= button_to "Edit", edit_update_path(@update), { :method => :get } %>
 	<%= button_to 'Destroy',  update_path(@update),  method: :delete, data: { confirm: 'Are you sure?' } %>
 </div>
 </body>
