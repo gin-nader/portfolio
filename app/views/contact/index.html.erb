@@ -1,23 +1,8 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<title>Tom Ginader - Graduate Student</title>
-	<link href='https://fonts.googleapis.com/css?family=Droid+Sans' rel='stylesheet' type='text/css'>
-	<link href='https://fonts.googleapis.com/css?family=Lobster' rel='stylesheet' type='text/css'>
 </head>
 <body>
-	<header id="main_navigation" class="clearfix">
-		<%= link_to "Tom Ginader", {controller: "home", action: "index"}, class: "name" %>
-		<nav>
-			<%= link_to "Status Updates", {controller: "updates", action: "index"}, 
-				class: "nav_bar" %>
-			<%= link_to "My Projects", {controller: "projects", action: "index"}, 
-				class: "nav_bar" %>
-			<%= link_to "Contact Me", {controller: "contact", action: "index"}, 
-				class: "nav_bar" %>
-		</nav>
-	</header>
-
 	<div id="projects_wrapper" class="skinny_wrapper">
 		<h1 id="page_title">Contact Me</h1>
 		<hr>
@@ -41,13 +26,5 @@
 			class="button">
 		</div>
 	</div>
-
-<footer id="main_footer">
-		<hr>
-		<p class="copyright">&copy;2016 Tom Ginader</p>
-		<nav>
-			<a href="#"><i class="fa fa-github" aria-hidden="true"></i></a>
-		</nav>		
-	</footer>
 </body>
 </html>

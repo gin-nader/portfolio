@@ -1,7 +1,7 @@
 class UpdatesController < ApplicationController
   before_action :find_update, only: [:show, :edit, :update, :destroy]
   def index
-  	@update = Update.new
+  	@update = Update.all.order("created_at desc")
   end
 
   def new
