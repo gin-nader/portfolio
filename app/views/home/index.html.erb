@@ -16,7 +16,7 @@
 
 				<% @updates.each do |update| %>
 					<div class="update">
-						<h5><%= update.content %></h5>
+						<h5><%= markdown update.content %></h5>
 						<p class="date"><%= update.created_at.strftime("%B %d, %Y") %></p>
 					</div>
 				<% end %>
