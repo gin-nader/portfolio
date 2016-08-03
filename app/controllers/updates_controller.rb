@@ -40,10 +40,10 @@ class UpdatesController < ApplicationController
   private
 
   def update_params
-  	params.require(:update).permit(:content)
+  	params.require(:update).permit(:content, :slug)
   end
 
   def find_update
-  	@update = Update.find(params[:id])
+  	@update = Update.friendly.find(params[:id])
   end
 end
