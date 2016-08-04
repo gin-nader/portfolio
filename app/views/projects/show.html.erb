@@ -1,11 +1,31 @@
 <!DOCTYPE html>
 <html>
 <head>
+</head>
 <body>
+<br>
+<br>
 
+<div id="projects_wrapper" class="skinny_wrapper">
+	<h5><%= @project.title %></h5>
+	<hr>
+	<br>
+	<br>
 
+	<div id="content">
+	  <%= markdown @project.description %>
+	  <br>
+	  <br>
+	  <a href="<%= @project.link %>" class="button" target="_blank">
+	  Link to demonstration video</a>
+	  <a href="https://github.com/nadirjin/Suny-Poly-Capstone" class="button" target="_blank">
+          Link to source code</a>
 
-
-
+	  <br>
+	  <br>
+	</div>
+	<%= button_to "Edit", edit_project_path(@project), { :method => :get } %>
+	<%= button_to 'Destroy',  project_path(@project),  method: :delete, data: { confirm: 'Are you sure?' } %>
+</div>
 </body>
 </html>

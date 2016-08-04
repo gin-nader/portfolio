@@ -24,12 +24,13 @@
 			<div class="col-3 homepage_content">
 				<h2>Recent Projects</h2>
 				<hr>
-				<h3><a href="#">First project</a></h3>
-				<p class="date">July 20th, 2016</p>
-				<h3><a href="#">Second project</a></h3>
-				<p class="date">July 20th, 2016</p>
-				<h3><a href="#">Third project</a></h3>				
-				<p class="date">July 20th, 2016</p>
+
+				 <% @projects.each do |project| %>
+                                        <div class="project">
+                                                <h3><%= link_to project.title, project %></h3>
+                                                <p class="date"><%= project.created_at.strftime("%B %d, %Y") %></p>
+                                        </div>
+				<% end %>
 			</div>
 		</div>
 	</header>

@@ -7,14 +7,14 @@
 		<h1 id="page_title">Status Updates</h1>
 		<hr>
 		<div>
-			<% @update.each do |update| %>
+			<% @updates.each do |update| %>
 				<div class="update">
 					<p><%= markdown update.content %></p>
 					<p class="date"><%= update.created_at.strftime("%B %d, %Y") %></p>
 				</div>
               			<%end %>
 		</div>
-		<%= will_paginate @update %>
+		<%= will_paginate(@updates)%>
 	</div>
 </body>
 </html>

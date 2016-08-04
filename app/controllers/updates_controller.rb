@@ -1,8 +1,8 @@
 class UpdatesController < ApplicationController
   before_action :find_update, only: [:show, :edit, :update, :destroy]
   def index
-  	@update = Update.all.order("created_at desc").paginate(page: params[:page],
-				    per_page: 10)
+  	@updates = Update.all.order("created_at desc").paginate(page: params[:page],
+					per_page: 10)
   end
 
   def new

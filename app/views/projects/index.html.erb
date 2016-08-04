@@ -4,21 +4,18 @@
 </head>
 <body>
 	<div id="projects_wrapper" class="skinny_wrapper">
-		<h1 id="page_title">My Projects</h1>
-		<hr>
-		<div class="project">
-			<h2><a href="#">Project One</a></h2>
-			<p class="date">July 22, 2016</p>
-			<hr>
-		</div>
+                <h1 id="page_title">My Projects</h1>
+                <hr>
+                <div>
+                        <% @projects.each do |project| %>
+                                <div class="project">
+                                        <p><%= link_to project.title, project %></p>
+                                        <p class="date"><%= project.created_at.strftime("%B %d, %Y") %>
+                                </div>
+                                <%end %>
+                </div>
+                <%= will_paginate @projects %>
+        </div>
 
-		<div class="pagination">
-			<span class="previous_page disabled">
-			Previous</span>
-			<em class="current">1</em>
-			<a rel="next" href="#">2</a>
-			<a class="next_page" href="#">Next</a>
-		</div>
-	</div>
 </body>
 </html>
