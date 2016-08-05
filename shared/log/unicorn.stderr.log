@@ -1,0 +1,79 @@
+I, [2016-07-31T20:35:09.698081 #23479]  INFO -- : Refreshing Gem list
+I, [2016-07-31T20:35:11.870091 #23479]  INFO -- : listening on addr=/home/deploy/rails/portfolio/shared/sockets/unicorn.sock fd=11
+I, [2016-07-31T20:35:11.870315 #23479]  INFO -- : worker=0 spawning...
+I, [2016-07-31T20:35:11.873064 #23479]  INFO -- : worker=1 spawning...
+I, [2016-07-31T20:35:11.874402 #23482]  INFO -- : worker=0 spawned pid=23482
+I, [2016-07-31T20:35:11.874590 #23482]  INFO -- : worker=0 ready
+I, [2016-07-31T20:35:11.876561 #23479]  INFO -- : master process ready
+I, [2016-07-31T20:35:11.882986 #23485]  INFO -- : worker=1 spawned pid=23485
+I, [2016-07-31T20:35:11.883172 #23485]  INFO -- : worker=1 ready
+I, [2016-07-31T20:54:43.379990 #25359]  INFO -- : executing ["/home/deploy/.rbenv/versions/2.2.3/bin/unicorn", "-c", "config/unicorn.rb", "-E", "production", "-D", {11=>#<Kgio::UNIXServer:/home/deploy/rails/portfolio/shared/sockets/unicorn.sock>}] (in /home/deploy/rails/portfolio)
+I, [2016-07-31T20:54:43.380334 #25359]  INFO -- : forked child re-executing...
+I, [2016-07-31T20:54:43.834346 #25359]  INFO -- : inherited addr=/home/deploy/rails/portfolio/shared/sockets/unicorn.sock fd=11
+I, [2016-07-31T20:54:43.834801 #25359]  INFO -- : Refreshing Gem list
+I, [2016-07-31T20:54:46.684909 #25359]  INFO -- : worker=0 spawning...
+I, [2016-07-31T20:54:46.688181 #25359]  INFO -- : worker=1 spawning...
+I, [2016-07-31T20:54:46.693042 #25359]  INFO -- : master process ready
+I, [2016-07-31T20:54:46.689734 #25363]  INFO -- : worker=0 spawned pid=25363
+I, [2016-07-31T20:54:46.693725 #25363]  INFO -- : worker=0 ready
+I, [2016-07-31T20:54:46.695008 #25366]  INFO -- : worker=1 spawned pid=25366
+I, [2016-07-31T20:54:46.695243 #25366]  INFO -- : worker=1 ready
+I, [2016-07-31T21:03:24.945795 #25359]  INFO -- : reaped #<Process::Status: pid 25363 exit 0> worker=0
+I, [2016-07-31T21:03:24.946203 #25359]  INFO -- : reaped #<Process::Status: pid 25366 exit 0> worker=1
+I, [2016-07-31T21:03:24.946418 #25359]  INFO -- : master complete
+E, [2016-07-31T21:03:25.033065 #23479] ERROR -- : reaped #<Process::Status: pid 25359 exit 0> exec()-ed
+I, [2016-07-31T21:03:25.855082 #23479]  INFO -- : reaped #<Process::Status: pid 23482 exit 0> worker=0
+I, [2016-07-31T21:03:25.855269 #23479]  INFO -- : reaped #<Process::Status: pid 23485 exit 0> worker=1
+I, [2016-07-31T21:03:25.855441 #23479]  INFO -- : master complete
+I, [2016-07-31T21:03:41.411487 #1571]  INFO -- : Refreshing Gem list
+I, [2016-07-31T21:03:45.698084 #1571]  INFO -- : unlinking existing socket=/home/deploy/rails/portfolio/shared/sockets/unicorn.sock
+I, [2016-07-31T21:03:45.698656 #1571]  INFO -- : listening on addr=/home/deploy/rails/portfolio/shared/sockets/unicorn.sock fd=11
+I, [2016-07-31T21:03:45.698924 #1571]  INFO -- : worker=0 spawning...
+I, [2016-07-31T21:03:45.704554 #1571]  INFO -- : worker=1 spawning...
+I, [2016-07-31T21:03:45.708665 #1571]  INFO -- : master process ready
+I, [2016-07-31T21:03:45.715912 #1582]  INFO -- : worker=1 spawned pid=1582
+I, [2016-07-31T21:03:45.716127 #1582]  INFO -- : worker=1 ready
+I, [2016-07-31T21:03:45.716470 #1579]  INFO -- : worker=0 spawned pid=1579
+I, [2016-07-31T21:03:45.716670 #1579]  INFO -- : worker=0 ready
+E, [2016-08-02T20:28:46.785363 #1571] ERROR -- : reaped #<Process::Status: pid 1582 SIGKILL (signal 9)> worker=1
+I, [2016-08-02T20:28:46.791703 #1571]  INFO -- : worker=1 spawning...
+I, [2016-08-02T20:28:46.810038 #26994]  INFO -- : worker=1 spawned pid=26994
+I, [2016-08-02T20:28:46.810880 #26994]  INFO -- : worker=1 ready
+E, [2016-08-02T20:28:47.634785 #1571] ERROR -- : reaped #<Process::Status: pid 1579 SIGKILL (signal 9)> worker=0
+I, [2016-08-02T20:28:47.638713 #1571]  INFO -- : worker=0 spawning...
+I, [2016-08-02T20:28:47.649702 #26997]  INFO -- : worker=0 spawned pid=26997
+I, [2016-08-02T20:28:47.650890 #26997]  INFO -- : worker=0 ready
+E, [2016-08-04T02:38:02.233907 #1571] ERROR -- : reaped #<Process::Status: pid 26997 SIGKILL (signal 9)> worker=0
+I, [2016-08-04T02:38:02.241542 #1571]  INFO -- : worker=0 spawning...
+I, [2016-08-04T02:38:02.258306 #13016]  INFO -- : worker=0 spawned pid=13016
+I, [2016-08-04T02:38:02.258907 #13016]  INFO -- : worker=0 ready
+E, [2016-08-04T20:59:35.703951 #1571] ERROR -- : reaped #<Process::Status: pid 26994 SIGKILL (signal 9)> worker=1
+I, [2016-08-04T20:59:35.710620 #1571]  INFO -- : worker=1 spawning...
+I, [2016-08-04T20:59:35.731772 #28279]  INFO -- : worker=1 spawned pid=28279
+I, [2016-08-04T20:59:35.732380 #28279]  INFO -- : worker=1 ready
+I, [2016-08-04T21:18:34.945528 #1571]  INFO -- : reaped #<Process::Status: pid 13016 exit 0> worker=0
+I, [2016-08-04T21:18:34.957057 #1571]  INFO -- : reaped #<Process::Status: pid 28279 exit 0> worker=1
+I, [2016-08-04T21:18:34.957592 #1571]  INFO -- : master complete
+I, [2016-08-04T21:20:16.788508 #2231]  INFO -- : Refreshing Gem list
+I, [2016-08-04T21:20:20.924455 #2231]  INFO -- : unlinking existing socket=/home/deploy/rails/portfolio/shared/sockets/unicorn.sock
+I, [2016-08-04T21:20:20.924740 #2231]  INFO -- : listening on addr=/home/deploy/rails/portfolio/shared/sockets/unicorn.sock fd=8
+I, [2016-08-04T21:20:20.924928 #2231]  INFO -- : worker=0 spawning...
+I, [2016-08-04T21:20:20.927127 #2231]  INFO -- : worker=1 spawning...
+I, [2016-08-04T21:20:20.933686 #2270]  INFO -- : worker=0 spawned pid=2270
+I, [2016-08-04T21:20:20.933995 #2270]  INFO -- : worker=0 ready
+I, [2016-08-04T21:20:20.941666 #2273]  INFO -- : worker=1 spawned pid=2273
+I, [2016-08-04T21:20:20.942049 #2273]  INFO -- : worker=1 ready
+I, [2016-08-04T21:20:20.942511 #2231]  INFO -- : master process ready
+I, [2016-08-04T23:58:41.012457 #2231]  INFO -- : reaped #<Process::Status: pid 2270 exit 0> worker=0
+I, [2016-08-04T23:58:41.013357 #2231]  INFO -- : reaped #<Process::Status: pid 2273 exit 0> worker=1
+I, [2016-08-04T23:58:41.013589 #2231]  INFO -- : master complete
+I, [2016-08-05T00:01:57.526791 #2404]  INFO -- : Refreshing Gem list
+I, [2016-08-05T00:02:07.125573 #2404]  INFO -- : unlinking existing socket=/home/deploy/rails/portfolio/shared/sockets/unicorn.sock
+I, [2016-08-05T00:02:07.125897 #2404]  INFO -- : listening on addr=/home/deploy/rails/portfolio/shared/sockets/unicorn.sock fd=11
+I, [2016-08-05T00:02:07.126146 #2404]  INFO -- : worker=0 spawning...
+I, [2016-08-05T00:02:07.130826 #2404]  INFO -- : worker=1 spawning...
+I, [2016-08-05T00:02:07.133359 #2404]  INFO -- : master process ready
+I, [2016-08-05T00:02:07.143320 #3338]  INFO -- : worker=0 spawned pid=3338
+I, [2016-08-05T00:02:07.143620 #3338]  INFO -- : worker=0 ready
+I, [2016-08-05T00:02:07.146492 #3340]  INFO -- : worker=1 spawned pid=3340
+I, [2016-08-05T00:02:07.146728 #3340]  INFO -- : worker=1 ready

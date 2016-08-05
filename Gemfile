@@ -23,7 +23,8 @@ gem 'redcarpet', '~> 3.2.2'
 gem 'pg'
 gem 'unicorn'
 gem 'friendly_id', '~> 5.1.0'
-gem 'will_paginate', '~> 3.1.0'
+gem 'web-console', group: :development
+gem 'coffee-script-source', '1.8.0'
 
 # Use jquery as the JavaScript library
 gem 'jquery-rails'
@@ -44,10 +45,7 @@ group :development, :test do
   gem 'byebug', platform: :mri
 end
 
-group :development do
-  # Access an IRB console on exception pages or by using <%= console %> anywhere in the code.
-  gem 'web-console'
-end
+
 
 # Windows does not include zoneinfo files, so bundle the tzinfo-data gem
 gem 'tzinfo-data', platforms: [:mingw, :mswin, :x64_mingw, :jruby]
