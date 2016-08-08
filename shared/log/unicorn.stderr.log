@@ -77,3 +77,4 @@ I, [2016-08-05T00:02:07.143320 #3338]  INFO -- : worker=0 spawned pid=3338
 I, [2016-08-05T00:02:07.143620 #3338]  INFO -- : worker=0 ready
 I, [2016-08-05T00:02:07.146492 #3340]  INFO -- : worker=1 spawned pid=3340
 I, [2016-08-05T00:02:07.146728 #3340]  INFO -- : worker=1 ready
+D, [2016-08-07T07:26:37.772603 #2404] DEBUG -- : waiting 16.0s after suspend/hibernation

@@ -12,16 +12,23 @@
 
   <body>
   	<header id="main_navigation" class="clearfix">
-		<%= link_to "Tom Ginader", {controller: "home", action: "index"}, class: "name" %>
+		<%= link_to "Tom Ginader", {controller: "/home", action: "index"}, class: "name" %>
 		<nav>
-			<%= link_to "Status Updates", {controller: "updates", action: "index"}, 
+			<%= link_to "Status Updates", {controller: "/updates", action: "index"}, 
 				class: "nav_bar" %>
-			<%= link_to "My Projects", {controller: "projects", action: "index"}, 
+			<%= link_to "My Projects", {controller: "/projects", action: "index"}, 
 				class: "nav_bar" %>
-			<%= link_to "Contact Me", {controller: "contacts", action: "new"}, 
+			<%= link_to "Contact Me", {controller: "/contacts", action: "new"}, 
 				class: "nav_bar" %>
 		</nav>
 	</header>
+	
+	<% if notice %>
+	  <p class="notice"><%= notice %></p>
+	<% elsif alert %>
+      <p class="alert"><%= alert %></p>
+    <% end %>
+
     <%= yield %>
 
     <footer id="main_footer">

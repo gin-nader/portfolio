@@ -17,7 +17,7 @@ gem 'friendly_id', '~> 5.1.0'
 gem 'web-console', group: :development
 gem 'coffee-script-source', '1.8.0'
 gem 'mail_form'
-
+gem 'devise'
 
 # Use jquery as the JavaScript library
 gem 'jquery-rails'
