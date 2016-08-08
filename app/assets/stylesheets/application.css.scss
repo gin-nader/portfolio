@@ -179,7 +179,8 @@ input[type="password"], textarea {
 	margin: .5em 0 2em 0;
 }
 
-input[type="text"] {
+input[type="text"], input[type="email"],
+input[type="password"], {
 	max-width: 33%;
 	max-height: 1em;
 }
