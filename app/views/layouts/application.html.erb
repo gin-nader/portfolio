@@ -20,6 +20,10 @@
 				class: "nav_bar" %>
 			<%= link_to "Contact Me", {controller: "/contacts", action: "new"}, 
 				class: "nav_bar" %>
+		    <% if user_signed_in? %>
+			  <%= button_to "Sign Out", destroy_user_session_path, method: :delete, 
+				id: "sign_out_button" %>
+			<% end %>
 		</nav>
 	</header>
 	
